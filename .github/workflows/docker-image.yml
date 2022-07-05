@@ -3,8 +3,7 @@ name: docker-build
 on:
   push:
     branches:
-      - chains/*
-
+      - '**'
 jobs:
   docker:
     runs-on: ubuntu-latest
