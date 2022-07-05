@@ -24,7 +24,7 @@ jobs:
         run: |
           DOCKER_IMAGE=maiquanghiep/bdjuno
           CHAIN_NAME="${{env.CHAIN_NAME}}"
-          VERSION="${{env.GITHUB_TAG}}"
+          VERSION="${{env.GITHUB_VERSION}}"
           TAGS="${DOCKER_IMAGE}:${CHAIN_NAME}-${VERSION}"
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
