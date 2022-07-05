@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	sum := 0
+	sum := 1
 	for {
 		sum++ // repeated forever
 		fmt.Println(sum)
